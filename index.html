@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Code</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+    <div id="container">
+        <!-- Heading -->
+        <header>
+            <h1 id="title">Bar-Code Generator</h1>
+            <p id="description">All text and video link converted Bar Code</p>
+        </header>
+        <!-- Text Area -->
+        <div  id="textArea">
+            <textarea type="text" name="text" id="text" cols="30" rows="10" placeholder="Enter Title"></textarea><br/>
+        </div>
+        <!-- Button Container-->
+            <button id="btn" type="submit">Generate Barcode</button><br>
+            <!-- Share Barcode button will be appended here -->
+        <!-- Canvas for the bar code image-->
+        <p>Bar-Code:</p>
+        <span id="barCanvas"></span>
+        <img src="" id="barcode">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    width: 100%;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #6c7a89;
+    position: relative;
+}
+p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#container {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+    margin: 20px auto;
+    padding: 20px 30px;
+    font-family: Arial, sans-serif;
+    max-width: 600px; /* Adjust maximum width as per your design */
+}
+
+#title {
+    text-align: center;
+    font-size: 2rem;
+    color: darkblue;
+    font-weight: 5rem;
+    text-shadow: 4px 3px #0f7bee;
+}
+
+#description {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(7, 178, 234);
+    text-shadow: 2px 1px rgba(238, 90, 203, 0.685);
+}
+
+#textArea {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#text {
+    padding: 10px 20px 150px 20px;
+    text-align: center;
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/d4/ba/d0/d4bad0fd567807befa5afb2194121b43.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 123, 255, 0.5);
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#btn {
+    padding: 7px 7px;
+    margin-left: 82px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+}
+
+#btn:hover {
+    background-color: transparent;
+    color: black;
+}
+#barcode {
+    margin-left: 50px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(229, 7, 7, 0.593);
+}
+
+#barCanvas {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    border-radius: 50%;
+    border: 6px solid #ffffff26;
+    border-top: 5px solid #fff;
+    animation: barCanvas 1s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px */
+    #container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    #btn {
+        margin-left: 0;
+    }
+}
